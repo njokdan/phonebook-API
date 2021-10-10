@@ -41,20 +41,20 @@ import {
       return this.contactsService.getSingleContact(contactId);
     }
 
-    @Get(':name')
-    getContactByName(@Param('name') contactName: string) {
-      return this.contactsService.getSingleContactByName(contactName);
-    }
+    // @Get(':name')
+    // getContactByName(@Param('name') contactName: string) {
+    //   return this.contactsService.getSingleContactByName(contactName);
+    // }
 
-    @Get(':email')
-    getContactByEmail(@Param('email') contactEmail: string) {
-      return this.contactsService.getSingleContactByEmail(contactEmail);
-    }
+    // @Get(':email')
+    // getContactByEmail(@Param('email') contactEmail: string) {
+    //   return this.contactsService.getSingleContactByEmail(contactEmail);
+    // }
 
-    @Get(':mobile')
-    getContactByMobile(@Param('mobile') contactMobile: string) {
-      return this.contactsService.getSingleContactByMobile(contactMobile);
-    }
+    // @Get(':mobile')
+    // getContactByMobile(@Param('mobile') contactMobile: string) {
+    //   return this.contactsService.getSingleContactByMobile(contactMobile);
+    // }
   
     @Patch(':id')
     async updateContact(

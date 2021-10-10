@@ -43,39 +43,39 @@ export class ContactsService {
     };
   }
 
-  async getSingleContactByName(contactName: string) {
-    const contact = await this.findContactByName(contactName);
-    return {
-        id: contact.id,
-        name: contact.name,
-        email: contact.email,
-        mobile: contact.mobile,
-        created: contact.created,
-    };
-  }
+  // async getSingleContactByName(contactName: string) {
+  //   const contact = await this.findContactByName(contactName);
+  //   return {
+  //       id: contact.id,
+  //       name: contact.name,
+  //       email: contact.email,
+  //       mobile: contact.mobile,
+  //       created: contact.created,
+  //   };
+  // }
 
 
-  async getSingleContactByEmail(contactEmail: string) {
-    const contact = await this.findContactByEmail(contactEmail);
-    return {
-        id: contact.id,
-        name: contact.name,
-        email: contact.email,
-        mobile: contact.mobile,
-        created: contact.created,
-    };
-  }
+  // async getSingleContactByEmail(contactEmail: string) {
+  //   const contact = await this.findContactByEmail(contactEmail);
+  //   return {
+  //       id: contact.id,
+  //       name: contact.name,
+  //       email: contact.email,
+  //       mobile: contact.mobile,
+  //       created: contact.created,
+  //   };
+  // }
 
-  async getSingleContactByMobile(contactMobile: string) {
-    const contact = await this.findContactByMobile(contactMobile);
-    return {
-        id: contact.id,
-        name: contact.name,
-        email: contact.email,
-        mobile: contact.mobile,
-        created: contact.created,
-    };
-  }
+  // async getSingleContactByMobile(contactMobile: string) {
+  //   const contact = await this.findContactByMobile(contactMobile);
+  //   return {
+  //       id: contact.id,
+  //       name: contact.name,
+  //       email: contact.email,
+  //       mobile: contact.mobile,
+  //       created: contact.created,
+  //   };
+  // }
 
 
   async updateContact(
